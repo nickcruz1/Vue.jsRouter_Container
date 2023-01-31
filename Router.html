@@ -10,9 +10,26 @@
   <link rel="stylesheet" href="Router.css">
 </head>
 <body>
-  <h1>Vue js Router</h1>
+ <div id="app">
+
+  <h2 class="text-center fs-1 fw-bold p-1 m-1">Welcome To The <i class="fa-brands fa-vuejs fs-1"></i><b style="margin-left: -5px;">ue<b> Router</h2>
+    
+     
+    <!-- use the router-link component for navigation. -->
+    <!-- specify the link by passing the `to` prop. -->
+    <!-- `<router-link>` will render an `<a>` tag with the correct `href` attribute -->
+    <div class="text-center m-auto d-block justify-content-center">
+    <router-link class="m-1" to="/">Home</router-link>
+    <router-link class="m-1" to="/about">About</router-link>
+     <router-link class="m-1" to="/settings">Settings</router-link>
+  
+  <!-- route outlet -->
+  <!-- component matched by the route will render here -->
+  <router-view></router-view>
+</div><br>
   
   
+    <!-- External js File -->
   <script src="Router.js"></script>
 </body>
 </html>
